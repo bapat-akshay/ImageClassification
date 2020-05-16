@@ -1,0 +1,16 @@
+shape 50x50 - 70%
+shape 75x75 - 73%
+no dense layer - 79% (probably overfit; try with 6 epochs)
+6 epochs - 82%
+same with shape 100x100 - 81% (check with more epochs)
+with 10 epochs = 69% (!!!)
+75x75, 5 epochs, 32x2 conv nodes, 0 dense - 79%
+same, 128 conv nodes - 82%
+128x1 conv - 76%
+128x3 - 83%
+same with 32x1 dense - 71%
+0 dense, 128x3 conv, 5x5 conv window - 87%
+same, with 64 batch size - 81%
+batch size 16 - 71%
+best case with batch normalization - 73%
+best case with b.n. and data augmentation - 51% (wow!)
